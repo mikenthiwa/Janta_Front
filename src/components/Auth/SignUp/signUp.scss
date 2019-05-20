@@ -1,0 +1,148 @@
+.modal-header {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.8em;
+    border-bottom: 1px solid #d3dce6;;
+
+  i {
+    text-align: right;
+  }
+
+    .title {
+      font-size: 25px;
+      font-weight: 700;
+      color: #474d54;
+    }
+    .sub-title {
+      color: #9facbd;
+      font-size: 100%;
+      font-weight: 600;
+    }
+  }
+
+  .social-button {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2.3em;
+    grid-column-gap: 1em;
+    margin-top: 1em;
+
+    .social {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      align-items: center;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+      color: white;
+      font-family: 'Open Sans Condensed', sans-serif;
+      justify-content: center;
+      transform: scale(1);
+
+      @media (max-width: 415px) {
+        grid-template-columns: 1fr;
+
+        span {
+          display: none;
+          color: rgba(0, 0, 0, .3);
+
+        }
+      }
+
+      &.social:hover {
+        transform: scale(1.05);
+        transition: all 0.4s;
+      }
+
+      &.social:active {
+        color: rgba(0, 0, 0, .3);
+      }
+
+      i {
+        font-size: 22px;
+        color: white;
+        margin: auto auto;
+      }
+
+      &.facebook {
+        background-color: rgb(60, 90, 153);
+        padding-right: 0.5em;
+      }
+
+      &.google {
+        background: #af2722;
+      }
+
+      &.twitter {
+        background: #2589d0;
+      }
+    }
+  }
+
+
+  .alt-registration {
+    margin-top: 0.8em;
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    font-family: 'Open Sans', sans-serif;
+
+
+    .registration-title {
+      color: #9facbd;
+      text-align: center;
+      font-size: 100%;
+      margin: auto;
+      font-weight: 600;
+
+    }
+
+    .form-container {
+      form {
+        display: grid;
+        grid-row-gap: 0.5em;
+
+        label {
+          font-size: 13px;
+          color: #474d54;
+          font-weight: 600;
+        }
+
+        .input {
+          height: 2.4em;
+          font-family: 'Open Sans', sans-serif;
+          padding: 0.05em 0.4em;
+          font-size: 12.5px;
+        }
+
+
+        .sign-up-button {
+          cursor: pointer;
+          background-color: #52489C;
+          height: 1.6em;
+          color: white;
+          margin-top: 1em;
+          font-family: 'Open Sans Condensed', sans-serif;
+          font-size: 18px;
+          border-radius: 5px;
+          transform: scale(1);
+          display: grid;
+          justify-content: center;
+          align-items: center;
+          padding: 0.2em 0;
+          font-weight: 500;
+        }
+
+        .sign-up-button:hover {
+          transform: scale(1.03);
+          transition: all 0.4s;
+        }
+
+        .sign-up-button:active {
+          color: rgba(0, 0, 0, .3);
+          outline: none;
+        }
+      }
+    }
+  }
+

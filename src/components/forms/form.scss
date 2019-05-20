@@ -1,0 +1,24 @@
+.error {
+  &.inactive{
+    display: none;
+  }
+  &.active {
+    color: red;
+    font-size: 12px;
+  }
+}
+
+//.form-input-active {
+//    border: 1px solid red;
+//}
+
+.form-input {
+  height: 2.4em;
+  border-radius: 5px;
+  color: inherit;
+  border: 1px solid #d3dce6;
+
+  &.active {
+    border: 1px solid red;
+  }
+}
